@@ -1,0 +1,25 @@
+.message-bubble {
+  padding: 10px;
+  border-radius: 15px;
+  margin: 12px 0;
+  max-width: 60%;
+  width: fit-content;
+  display: inline-block;
+}
+
+.message-bubble.grouped {
+  margin: 2px 0;
+}
+
+.message-bubble.grouped + .message-bubble {
+  margin-bottom: 2px;
+}
+
+.current-user {
+  background-color: #DCF8C6;
+  align-self: flex-end;
+}
+
+.message-bubble:not(.current-user) {
+  background-color: #ECECEC;
+}
